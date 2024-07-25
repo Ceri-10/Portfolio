@@ -1,0 +1,99 @@
+
+---
+import '@fontsource-variable/nunito-sans'
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { description, title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+		<Header/>
+		<slot />
+		<Footer />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		color: white;
+		color-scheme: light dark; 
+		
+		
+	}
+
+
+	html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; 
+	}
+
+	
+
+	html {
+		font-family: "Nunito Sans Variable",system-ui, sans-serif;
+		scroll-behavior: smooth
+		
+		
+	}
+	body{
+		background: #050505;
+		display: flex;
+		flex-direction:column;
+		height: 100vh;
+		
+		
+	}
+
+	p{
+		color: #D1D5DB;
+	}
+
+	header {
+
+  	background-color: rgba(0, 0, 0, 0.5);
+	top:0;
+	position: sticky;
+	
+	}
+
+	.header-background {
+	width: 100vw; 
+	height: 100vh; 
+	background-size: cover; 
+	background-color: rgba(0, 0, 0, 0.137)
+	
+	}
+
+
+
+
+
+
+	@media (prefers-reduced-motion: reduce){
+		html{
+			scroll-behavior:auto;
+		}
+	}
+
+
+</style>

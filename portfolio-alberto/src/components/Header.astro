@@ -1,0 +1,35 @@
+---
+import GithubIcon from "../icons/Github.astro";
+import LinkedinIcon from "../icons/Linkedin.astro";
+import Social from "../components/Social.astro";
+import EmailIcon from "../icons/Email.astro";
+---
+
+<header
+  class="header-background flex items-center justify-center py-5 w-full xl:w-[1120px] mx-auto px-5"
+>
+  <div class="flex flex-row justify-between w-full max-w-[1150px]">
+    <nav class="flex flex-row gap-x-10 opacity-80">
+      <a href="#top">Inicio</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="flex flex-row">
+      <Social
+        href="https://es.linkedin.com/in/alberto-c%C3%A1novas-montalb%C3%A1n-195570188"
+      >
+        <LinkedinIcon />
+      </Social>
+
+      <Social href="https://github.com/Ceri-10">
+        <GithubIcon />
+      </Social>
+
+      <Social href="mailto:canovasmontalbanalberto@gmail.com">
+        <EmailIcon />
+      </Social>
+    </div>
+  </div>
+</header>
