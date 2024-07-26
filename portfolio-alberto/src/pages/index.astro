@@ -4,6 +4,7 @@ import Experience from "../components/Experience.astro";
 import Section from "../components/Section.astro";
 import Projects from "../components/Projects.astro";
 import Tecnologias from "../components/Tecnologias.astro";
+import Me from "../components/Me.astro";
 ---
 
 <Layout
@@ -11,11 +12,11 @@ import Tecnologias from "../components/Tecnologias.astro";
   description="Contrata a Alberto. Especializado en desarrollo web y 3D"
 >
   <main class="px-4 bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
-    <div class="flex items-center justify-center">
+    <div id="inicio" class="flex items-center justify-center">
       <div class="flex justify-center items-center gap-16">
         <div>
           <h1 class="text-white text-6xl font-bold">Alberto Cánovas</h1>
-          <h2 class="text-lg text-blue-400">Desarrollador Fullstack y Artista 3D.</h2>
+          <h2 class="text-lg text-blue-400">Desarrollador FullStack y Artista 3D.</h2>
         </div>
         <div>
           <img
@@ -26,6 +27,10 @@ import Tecnologias from "../components/Tecnologias.astro";
       </div>
     </div>
 
+    <div id="presentacion" class="flex justify-center items-center mb-11">
+      <Me />
+    </div>
+
     <Section id="experiencia">
       <h2 class="text-3xl font-semibold mb-6 flex gap-x-2 items-center">
         Experiencia
@@ -33,7 +38,7 @@ import Tecnologias from "../components/Tecnologias.astro";
       <Experience />
     </Section>
 
-    <Section id="proyectos">
+    <Section id="proyectos" class="max-w-screen-xl mx-auto md:w-5/6 lg:w-4/6 pt-10">
       <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
         Proyectos
       </h2>

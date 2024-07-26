@@ -1,62 +1,77 @@
 ---
+import HTML from "../icons/Html.astro";
+import JavaScript from "../icons/Javascript.astro";
+import TypeScript from "../icons/Typescript.astro";
+import React from "../icons/React.astro";
+import Tailwind from "../icons/Tailwind.astro";
+import Node from "../icons/Node.astro";
+import Mysql from "../icons/Mysql.astro";
+import Git from "../icons/Git.astro";
+import GitHub2 from "../icons/GitHub2.astro";
+import NPM from "../icons/Npm.astro";
+import VSCode from "../icons/VisualStudioCode.astro";
+import VS from "../icons/VisualStudio.astro";
+import Docker from "../icons/Docker.astro";
+import Java from "../icons/Java.astro";
+import CSS from "../icons/Css.astro";
+import Mongo from "../icons/Mongo.astro";
 import CSharp from "../icons/CSharp.astro";
+import Android from "../icons/Android.astro";
 import Unity from "../icons/Unity.astro";
-
-const TAGS = {
-  NEXT: {
-    name: "C#",
-    class: "bg-black text-white",
-    icon: CSharp,
-  },
-  TAILWIND: {
-    name: "Unity",
-    class: "bg-[#003159] text-white",
-    icon: Unity,
-  },
-};
-const PROJECTS = [
-  {
-    title: "Peblobs",
-    description: "Videojuego creado tres meses ",
-    link: "https://ceri10.itch.io/peblobs",
-    github: "https://github.com/Ceri-10/PeblobsRepository",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
-  },
-
-  {
-    title: "DataPortal",
-    description: "Videojuego creado tres meses ",
-    link: "https://ceri10.itch.io/peblobs",
-    github: "https://github.com/Ceri-10/PeblobsRepository",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
-  },
-];
+import Github from "../icons/Github.astro";
 ---
 
-{
-  PROJECTS.map(({ image, title, description, tags }) => (
-    <article>
-      <h3 class="text-2xl font-semibold text-blue-400 mb-2">{title}</h3>
-      <p class="text-lg mb-4 text-pretty">{description}</p>
-      <ul class="flex gap-x-2 flex-row mb-2">
-        {tags.map((tag) => (
-          <li>
-            <span
-              class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}
-            >
-              <tag.icon class="size-4" />
-              {tag.name}
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        class="rounded shadow-2xl shadow-white/10"
-        src={image}
-        alt={`Captura de pantalla del proyecto ${image}`}
-      />
-    </article>
-  ))
-}
+<div class="relative rounded-2xl p-6">
+  <div class="grid grid-cols-2 gap-1 pt-6 gap-y-6 text-xs">
+    <div class="flex flex-col items-center gap-2 border-style">
+      <h3 class="text-2xl font-semibold mb-2">DataPortal</h3>
+      <div class="flex flex-col lg:flex-row justify-center items-center px-3">
+        <img src="../../src/icons/alber.png" alt="" class="" />
+      </div>
+      <div class="h-full flex flex-col justify-between px-5">
+        <div class="grid grid-cols-3 gap-1 pt-6 gap-y-6 text-xs">
+          <div class="flex flex-col items-center gap-2">
+            <TypeScript class="size-4" />
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <HTML class="size-4" />
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <CSS class="size-4" />
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <React class="size-4" />
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <Node class="size-4" />
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <Tailwind class="size-4" />
+          </div>
+        </div>
+      </div>
+      <p>Sitio web</p>
+      <div class="flex gap-3 items-center justify-center pb-5">
+        <a
+          target="_blank"
+          href=""
+          class="flex flex-1 gap-1 items-center justify-center py-2.5 px-5 text-sm text-white font-medium rounded-full border hover:scale-105 hover:shadow-[0_0_20px_3px_rgba(30,125,103,0.7)]"
+          >Web</a
+        >
+  
+        <a
+          target="_blank"
+          href=""
+          class="flex flex-1 gap-1 items-center justify-center py-2.5 px-5 text-sm text-white font-medium rounded-full border hover:scale-105 hover:shadow-[0_0_20px_3px_rgba(30,125,103,0.7)]"
+          >Github <Github /></a
+        >
+    </div>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="flex flex-col items-center gap-2 border-style">
+  <h3 class="text-2xl font-semibold mb-2">Peblobs</h3>
+</div>
