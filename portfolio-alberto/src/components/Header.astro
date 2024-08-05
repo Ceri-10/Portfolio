@@ -6,28 +6,28 @@ import EmailIcon from "../icons/Email.astro";
 ---
 
 <header
-  class="header-background flex items-center justify-center py-5 w-full xl:w-[1120px] mx-auto px-5"
+  class="header-background flex items-center justify-center py-3 w-full xl:w-[1120px] mx-auto px-5 border-b-[0.1px] border-gray-500"
 >
-  <div class="flex flex-row justify-between w-full max-w-[1150px]">
+  <div class="flex flex-row items-center justify-between w-full max-w-[1150px]">
     <nav class="flex flex-row gap-x-10 opacity-80">
-      <a href="#inicio">Inicio</a>
-      <a href="#experiencia">Experiencia</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#tecnologias">Tecnologías</a>
+      <a href="#inicio" class="nav-item">Inicio</a>
+      <a href="#experiencia" class="nav-item">Experiencia</a>
+      <a href="#proyectos" class="nav-item">Proyectos</a>
+      <a href="#tecnologias" class="nav-item">Tecnologías</a>
     </nav>
-    <div class="flex flex-row">
+    <div class="flex flex-row space-x-4 px-5">
       <Social
         href="https://es.linkedin.com/in/alberto-c%C3%A1novas-montalb%C3%A1n-195570188"
       >
-        <LinkedinIcon />
+        <LinkedinIcon class="social-icon w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12" />
       </Social>
 
       <Social href="https://github.com/Ceri-10">
-        <GithubIcon />
+        <GithubIcon class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12" />
       </Social>
 
       <Social href="mailto:canovasmontalbanalberto@gmail.com">
-        <EmailIcon />
+        <EmailIcon class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12" />
       </Social>
     </div>
   </div>
